@@ -114,14 +114,14 @@ local mouse_bindings = {
   {
     event = { Down = { streak = 1, button = 'Right' } },
     mods = 'NONE',
-    action = wezterm.action({ PasteFrom = 'Clipboard' }),
+    action = act.PasteFrom('Clipboard'),
   },
   -- Change the default click behavior so that it only selects
   -- text and doesn't open hyperlinks
   {
     event = { Up = { streak = 1, button = 'Left' } },
     mods = 'NONE',
-    action = wezterm.action({ CompleteSelection = 'PrimarySelection' }),
+    action = act.CopyTo('Clipboard'),
   },
   -- and make CTRL-Click open hyperlinks
   {
