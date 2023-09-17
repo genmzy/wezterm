@@ -10,6 +10,9 @@ if platform.is_mac then
 elseif platform.is_win then
   mod.SUPER = 'ALT' -- to not conflict with Windows key shortcuts
   mod.SUPER_REV = 'ALT|CTRL'
+elseif platform.is_linux then
+  mod.SUPER = 'ALT'
+  mod.SUPER_REV = 'ALT|CTRL'
 end
 
 local keys = {

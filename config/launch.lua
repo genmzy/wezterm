@@ -25,6 +25,8 @@ elseif platform.is_mac then
     { label = 'Nushell', args = { '/opt/homebrew/bin/nu' } },
     { label = 'Zsh', args = { 'zsh' } },
   }
+elseif platform.is_linux then
+  options.default_prog = { '/usr/bin/zsh' }
 end
 
 return options
