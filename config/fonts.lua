@@ -1,13 +1,24 @@
 local wezterm = require('wezterm')
-local platform = require('utils.platform')
+local platform = require('utils.platform')()
 
-local font = 'ComicCodeLigatures Nerd Font'
---local font = 'ComicCodeLigatures NF'
--- local font_size = platform().is_mac and 12 or 9
-local font_size = 13
+local font_size
+local font
+if platform.is_linux then
+  font = wezterm.font_with_fallback({
+    { family = 'ComicCodeLigatures Nerd Font' },
+    { family = 'Noto Sans Mono CJK SC' },
+  })
+  font_size = 13
+elseif platform.is_windows then
+  font = wezterm.font('ComicCodeLigatures NF')
+  font_size = 10.5
+else
+  font = wezterm.font('ComicCodeLigatures Nerd Font')
+  font_size = 10.5
+end
 
 return {
-  font = wezterm.font(font),
+  font = font,
   font_size = font_size,
   text_background_opacity = 1.0,
 
