@@ -9,12 +9,12 @@ if platform.is_linux then
     { family = 'Noto Sans Mono CJK SC' },
   })
   font_size = 13
-elseif platform.is_windows then
+elseif platform.is_win then
   font = wezterm.font('ComicCodeLigatures NF')
-  font_size = 10.5
+  font_size = 12
 else
   font = wezterm.font('ComicCodeLigatures Nerd Font')
-  font_size = 10.5
+  font_size = 12
 end
 
 return {
