@@ -9,7 +9,7 @@ return {
   wsl_domains = {
     {
       name = 'WSL:Ubuntu',
-      distribution = 'Ubuntu',
+      distribution = 'Ubuntu-20.04',
       username = 'waves',
       default_cwd = '/home/waves',
       default_prog = { 'zsh' },
