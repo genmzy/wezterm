@@ -12,7 +12,9 @@ if platform.is_linux then
   font_size = 13
 elseif platform.is_win then
   line_height = 1.2
-  font = wezterm.font('RecMonoGenmzyUnsimple NF')
+  -- font = wezterm.font('RecMonoGenmzyUnsimple NF')
+  font = wezterm.font('RecMonoGenmzyUnsimple Nerd Font')
+  -- font = wezterm.font('ComicCodeLigaturesNerdFontComplete Nerd Font')
   font_size = 13.5
 else
   font = wezterm.font('ComicCodeLigatures Nerd Font')

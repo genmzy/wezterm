@@ -42,8 +42,10 @@ end
 
 M.set_battery = function()
   -- ref: https://wezfurlong.org/wezterm/config/lua/wezterm/battery_info.html
-  local discharging_icons = { '', '', '', '', '', '', '', '', '', '' }
-  local charging_icons = { '', '', '', '', '', '', '', '', '', '' }
+  local discharging_icons =
+    { '󰁺', '󰁻', '󰁼', '󰁽', '󰁾', '󰁿', '󰂀', '󰂁', '󰂂', '󰁹' }
+  local charging_icons =
+    { '󰢜', '󰂆', '󰂇', '󰂈', '󰢝', '󰂉', '󰢞', '󰂊', '󰂋', '󰂅' }
 
   local charge = ''
   local icon = ''
