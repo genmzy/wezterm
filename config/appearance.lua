@@ -16,6 +16,10 @@ return {
     },
   },
 
+  -- cursor
+  default_cursor_style = 'BlinkingBlock',
+  cursor_blink_rate = 800,
+
   -- scrollbar
   enable_scroll_bar = true,
 
