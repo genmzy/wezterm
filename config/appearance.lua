@@ -3,6 +3,9 @@ local colors = require('colors.custom')
 -- local fonts = require('config.fonts')
 
 return {
+  -- ui
+  front_end = 'OpenGL',
+
   -- color scheme
   colors = colors,
 
