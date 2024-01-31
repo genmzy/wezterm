@@ -6,6 +6,9 @@ return {
   -- ui
   front_end = 'OpenGL',
 
+  -- ligature fix
+  freetype_load_flags = 'NO_HINTING',
+
   -- color scheme
   colors = colors,
 
