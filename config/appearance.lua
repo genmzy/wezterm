@@ -1,4 +1,3 @@
-local wezterm = require('wezterm')
 local colors = require('colors.custom')
 -- local fonts = require('config.fonts')
 

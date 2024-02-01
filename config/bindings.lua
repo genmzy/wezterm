@@ -122,7 +122,7 @@ local mouse_bindings = {
   {
     event = { Up = { streak = 1, button = 'Left' } },
     mods = 'NONE',
-    action = act.CopyTo('Clipboard'),
+    action = act.CompleteSelection('Clipboard'),
   },
   -- and make CTRL-Click open hyperlinks
   {
