@@ -1,1 +1,2 @@
 - Forked version from https://github.com/KevinSilvester/wezterm-config
+- [Here](https://github.com/genmzy/dotfiles/tree/master/Backup/RecMonoGenmzyUnsimple/NFv3/double) is the font.
