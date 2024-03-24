@@ -11,7 +11,7 @@ if platform.is_linux then
     { family = 'RecMonoGenmzyUnsimple Nerd Font' },
     { family = 'Noto Sans Mono CJK SC' },
   })
-  font_size = 14
+  font_size = 14.5
 elseif platform.is_win then
   line_height = 1.2
   -- font = wezterm.font('RecMonoGenmzyUnsimple NF')
