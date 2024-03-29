@@ -48,7 +48,7 @@ local colorscheme = {
     '#92978c',
   },
   brights = {
-    '#dcd8c4',
+    '#a0a79a',
     '#f85552',
     '#8da101',
     '#dfa000',
