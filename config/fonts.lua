@@ -17,7 +17,7 @@ elseif platform.is_win then
   -- font = wezterm.font('RecMonoGenmzyUnsimple NF')
   font = wezterm.font('RecMonoGenmzyUnsimple Nerd Font')
   -- font = wezterm.font('ComicCodeLigaturesNerdFontComplete Nerd Font')
-  font_size = 13.5
+  font_size = 13.2
 else
   font = wezterm.font('ComicCodeLigatures Nerd Font')
   font_size = 12
