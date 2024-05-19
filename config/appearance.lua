@@ -15,7 +15,7 @@ return {
   background = {
     {
       source = { Color = colors.background },
-      opacity = require('utils.platform')().is_linux and 0.96 or 1.0,
+      opacity = 1.0,
       width = '100%',
       height = '100%',
     },
@@ -50,5 +50,4 @@ return {
     -- font_size = fonts.font_size,
   },
   inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
-  window_background_opacity = 0.3,
 }
