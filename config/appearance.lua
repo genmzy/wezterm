@@ -43,11 +43,7 @@ return {
     top = 0,
     bottom = 0,
   },
+  window_decorations = 'RESIZE',
   window_close_confirmation = 'NeverPrompt',
-  window_frame = {
-    active_titlebar_bg = '#24283b',
-    -- font = fonts.font,
-    -- font_size = fonts.font_size,
-  },
   inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
 }
