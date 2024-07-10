@@ -1,9 +1,9 @@
 local colors = require('colors.custom')
--- local fonts = require('config.fonts')
+local platform = require('utils.platform')()
 
 return {
-  -- ui
-  front_end = 'OpenGL',
+  -- ui: windows web gpu support is not good now
+  front_end = platform.is_win and 'OpenGL' or 'WebGpu',
 
   -- ligature fix
   freetype_load_flags = 'NO_HINTING',
