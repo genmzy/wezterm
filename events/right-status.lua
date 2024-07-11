@@ -5,12 +5,12 @@ local M = {}
 M.separator_char = ' '
 
 M.colors = {
-  date_fg = '#fab387',
-  date_bg = '#24283b',
-  battery_fg = '#f9e2af',
-  battery_bg = '#24283b',
-  separator_fg = '#74c7ec',
-  separator_bg = '#24283b',
+  date_fg = '#fabd2f',
+  date_bg = '#282828',
+  battery_fg = '#b8bb26',
+  battery_bg = '#282828',
+  separator_fg = '#d3869b',
+  separator_bg = '#282828',
 }
 
 M.cells = {} -- wezterm FormatItems (ref: https://wezfurlong.org/wezterm/config/lua/wezterm/format.html)
