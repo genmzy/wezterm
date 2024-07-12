@@ -23,8 +23,8 @@ local mocha = {
   surface2 = '#98971a',
   surface1 = '#45475a',
   surface0 = '#313244',
-  select = '#665c54',
-  base = '#282828',
+  select = '#282828',
+  base = '#1d2021',
   mantle = '#181825',
   crust = '#11111b',
 }
@@ -38,7 +38,7 @@ local colorscheme = {
   selection_bg = mocha.select,
 
   ansi = {
-    '#32302f',
+    '#282828',
     '#fb4934',
     '#b8bb26',
     '#fabd2f',
@@ -48,7 +48,7 @@ local colorscheme = {
     '#f2e5bc',
   },
   brights = {
-    '#282828',
+    '#665c54',
     '#cc241d',
     '#98971a',
     '#d79921',
@@ -87,7 +87,7 @@ local colorscheme = {
     [16] = mocha.peach,
     [17] = mocha.rosewater,
   },
-  scrollbar_thumb = mocha.surface2,
+  scrollbar_thumb = mocha.select,
   split = mocha.overlay0,
   compose_cursor = mocha.flamingo, -- nightbuild only
 }
