@@ -8,6 +8,7 @@ local line_height = 1.0
 local weight = 300
 
 if platform.is_linux then
+  weight = 400
   line_height = 1.1
   font = wezterm.font_with_fallback({
     { family = 'LigaSrcPro Nerd Font', weight = weight },
