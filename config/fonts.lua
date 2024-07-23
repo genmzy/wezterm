@@ -8,16 +8,16 @@ local line_height = 1.0
 local weight = 300
 
 if platform.is_linux then
+  line_height = 1.05
   font = wezterm.font_with_fallback({
-    { family = 'LigaSrcPro Nerd Font', weight = weight },
-    { family = 'Noto Sans Mono CJK SC' },
+    { family = 'PTCode Nerd Font', weight = weight },
   })
   font_size = 16
 elseif platform.is_win then
   weight = 400
   line_height = 1.1
   font = wezterm.font({ family = 'LigaSrcPro Nerd Font', weight = weight })
-  font_size = 13.5
+  font_size = 13
 else
   font = wezterm.font({ family = 'LigaSrcPro Nerd Font', weight = weight })
   font_size = 12
@@ -39,16 +39,16 @@ return {
       intensity = 'Bold',
       italic = false,
       font = wezterm.font(
-        'LigaSrcPro Nerd Font',
-        { weight = weight + 200, stretch = 'Normal', style = 'Normal' }
+        'PTCode Nerd Font',
+        { weight = weight + 300, stretch = 'Normal', style = 'Normal' }
       ),
     },
     {
       intensity = 'Bold',
       italic = true,
       font = wezterm.font(
-        'LigaSrcPro Nerd Font',
-        { weight = weight + 200, stretch = 'Normal', style = 'Italic' }
+        'PTCode Nerd Font',
+        { weight = weight + 300, stretch = 'Normal', style = 'Italic' }
       ),
     },
   },
