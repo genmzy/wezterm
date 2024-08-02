@@ -40,7 +40,7 @@ return {
       italic = false,
       font = wezterm.font(
         'LigaSrcPro Nerd Font',
-        { weight = weight + 200, stretch = 'Normal', style = 'Normal' }
+        { weight = weight + 300, stretch = 'Normal', style = 'Normal' }
       ),
     },
     {
@@ -48,7 +48,7 @@ return {
       italic = true,
       font = wezterm.font(
         'LigaSrcPro Nerd Font',
-        { weight = weight + 200, stretch = 'Normal', style = 'Italic' }
+        { weight = weight + 300, stretch = 'Normal', style = 'Italic' }
       ),
     },
   },
