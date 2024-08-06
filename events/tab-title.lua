@@ -114,7 +114,7 @@ M.setup = function()
 
     -- Unseen output alert
     if has_unseen_output then
-      M.push(bg, '#fabd2f', { Intensity = 'Bold' }, ' ' .. GLYPH_CIRCLE)
+      M.push(bg, '#f1fa8c', { Intensity = 'Bold' }, ' ' .. GLYPH_CIRCLE)
     end
 
     -- Right padding
