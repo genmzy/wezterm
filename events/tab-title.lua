@@ -17,17 +17,16 @@ M.cells = {}
 
 M.colors = {
   default = {
-    bg = '#92978c',
-    fg = '#fff9e8',
+    bg = '#9893a5',
+    fg = '#faf4ed',
   },
   is_active = {
-    bg = '#35a77c',
-    fg = '#fff9e8',
+    bg = '#575279',
+    fg = '#faf4ed',
   },
-
   hover = {
     bg = '#587d8c',
-    fg = '#fff9e8',
+    fg = '#faf4ed',
   },
 }
 
@@ -114,7 +113,7 @@ M.setup = function()
 
     -- Unseen output alert
     if has_unseen_output then
-      M.push(bg, '#FFA066', { Intensity = 'Bold' }, ' ' .. GLYPH_CIRCLE)
+      M.push(bg, '#ea9d34', { Intensity = 'Bold' }, ' ' .. GLYPH_CIRCLE)
     end
 
     -- Right padding

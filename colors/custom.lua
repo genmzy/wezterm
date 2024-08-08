@@ -1,95 +1,78 @@
--- A slightly altered version of catppucchin mocha
-local mocha = {
+---
+
+local dawn = {
+  _nc = '#f8f0e7',
+  base = '#faf4ed',
+  select = '#dfdad9',
   rosewater = '#f5e0dc',
-  flamingo = '#f2cdcd',
-  pink = '#d699b6',
-  mauve = '#D83A86',
-  red = '#f85552',
-  maroon = '#eba0ac',
-  peach = '#fab387',
-  yellow = '#f9e2af',
-  green = '#8da101',
-  teal = '#4fd6be',
-  sky = '#b4f9f8',
-  sapphire = '#74c7ec',
-  blue = '#35989F',
-  lavender = '#b4befe',
-  text = '#5c6a72',
-  subtext1 = '#bac2de',
-  subtext0 = '#a6adc8',
-  overlay2 = '#9399b2',
-  overlay1 = '#7f849c',
-  overlay0 = '#6c7086',
-  surface2 = '#e1ddcb',
-  surface1 = '#45475a',
-  surface0 = '#313244',
-  select = '#e6e9db',
-  base = '#f3ead3',
-  mantle = '#181825',
   crust = '#11111b',
+
+  surface = '#fffaf3',
+  overlay = '#f2e9e1',
+  muted = '#9893a5',
+  subtle = '#797593',
+  text = '#575279',
+  love = '#b4637a',
+  gold = '#ea9d34',
+  rose = '#d7827e',
+  pine = '#286983',
+  foam = '#56949f',
+  iris = '#907aa9',
+  leaf = '#6d8f89',
+  highlight_low = '#f4ede8',
+  highlight_med = '#dfdad9',
+  highlight_high = '#cecacd',
+  none = 'NONE',
 }
 
 local colorscheme = {
-  foreground = mocha.text,
-  background = mocha.base,
-  cursor_bg = mocha.text,
-  cursor_border = mocha.rosewater,
-  cursor_fg = mocha.crust,
-  selection_bg = mocha.select,
+  foreground = dawn.text,
+  background = dawn.base,
+  cursor_bg = dawn.text,
+  cursor_border = dawn.rosewater,
+  cursor_fg = dawn.crust,
+  selection_bg = dawn.select,
 
   ansi = {
-    '#e1ddcb',
-    '#f85552',
-    '#8da101',
-    '#dfa000',
-    '#35989f',
-    '#dc5597',
-    '#35a77c',
-    '#92978c',
+    dawn.overlay, -- black
+    dawn.love, -- red
+    dawn.pine, -- green
+    dawn.gold, -- yellow
+    dawn.foam, -- blue
+    dawn.iris, -- magenta
+    dawn.rose, -- cyan
+    dawn.text, -- white
   },
   brights = {
-    '#a0a79a',
-    '#f85552',
-    '#8da101',
-    '#dfa000',
-    '#35989f',
-    '#dc5597',
-    '#35a77c',
-    '#5c6a72',
+    dawn.subtle, -- bright black
+    dawn.love, -- bright red
+    dawn.pine, -- bright green
+    dawn.gold, -- bright yellow
+    dawn.foam, -- bright blue
+    dawn.iris, -- bright magenta
+    dawn.rose, -- bright cyan
+    dawn.text, -- bright white
   },
   tab_bar = {
-    -- background = '#000000',
-    background = mocha.base,
-    active_tab = {
-      bg_color = mocha.surface2,
-      fg_color = mocha.text,
-    },
-    inactive_tab = {
-      bg_color = mocha.surface0,
-      fg_color = mocha.subtext1,
-    },
-    inactive_tab_hover = {
-      bg_color = mocha.surface0,
-      fg_color = mocha.text,
-    },
+    background = dawn.base,
     new_tab = {
-      bg_color = mocha.base,
-      fg_color = mocha.text,
+      bg_color = dawn.base,
+      fg_color = dawn.text,
     },
     new_tab_hover = {
-      bg_color = mocha.mantle,
-      fg_color = mocha.text,
+      bg_color = dawn.select,
+      fg_color = dawn.text,
       italic = true,
     },
   },
-  visual_bell = mocha.surface0,
+  -- visual_bell = mocha.surface0,
   indexed = {
-    [16] = mocha.peach,
-    [17] = mocha.rosewater,
+    [16] = dawn.rosewater,
+    [17] = dawn.rosewater,
   },
-  scrollbar_thumb = mocha.surface2,
-  split = mocha.overlay0,
-  compose_cursor = mocha.flamingo, -- nightbuild only
+  scrollbar_thumb = dawn.rosewater,
+  split = dawn.highlight_high,
+  -- compose_cursor = mocha.flamingo, -- nightbuild only
 }
 
 return colorscheme
