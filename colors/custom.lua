@@ -20,6 +20,7 @@ local deus = {
   surface0 = '#313244',
   none = 'NONE',
   rosewater = '#f5e0dc',
+  select = '#21252c',
 }
 
 local colorscheme = {
@@ -28,7 +29,7 @@ local colorscheme = {
   cursor_bg = deus.text,
   cursor_border = deus.rosewater,
   cursor_fg = deus.dark,
-  selection_bg = deus.gray,
+  selection_bg = deus.select,
 
   ansi = {
     deus.text,
@@ -66,7 +67,7 @@ local colorscheme = {
     },
   },
   visual_bell = deus.surface0,
-  scrollbar_thumb = deus.grey1,
+  scrollbar_thumb = deus.gray,
   split = deus.surface0,
   -- compose_cursor = mocha.flamingo, -- nightbuild only
   copy_mode_inactive_highlight_fg = { Color = deus.text },
