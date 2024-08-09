@@ -13,6 +13,7 @@ local deus = {
   grey0 = '#d5c4a1',
   grey1 = '#928374',
   grey2 = '#928374',
+  bblack = '#665c54',
   gray = '#3c3836',
   statusline1 = '#83a598',
   statusline2 = '#8ec07c',
@@ -42,7 +43,7 @@ local colorscheme = {
     deus.grey1,
   },
   brights = {
-    deus.grey2,
+    deus.bblack,
     deus.red,
     deus.green,
     deus.yellow,
