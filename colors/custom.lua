@@ -1,8 +1,8 @@
 -- deus color
 local deus = {
-  dark = '#2c323b',
-  text = '#ebdbb2',
-  base = '#ebdbb2',
+  dark = '#242a32',
+  text = '#e3d1a3',
+  base = '#e3d1a3',
   red = '#fb4934',
   orange = '#fe8019',
   yellow = '#fabd2f',
