@@ -1,5 +1,6 @@
 local wezterm = require('wezterm')
 local platform = require('utils.platform')()
+local local_cfg = require('local.local')
 
 local font_size
 local font
@@ -8,11 +9,11 @@ local line_height = 1.0
 local weight = 300
 
 if platform.is_linux then
-  line_height = 1.05
+  line_height = 1.1
   font = wezterm.font_with_fallback({
     { family = 'PTCode Nerd Font' },
   })
-  font_size = 16
+  font_size = local_cfg.screen_k == 2 and 14.8 or 15.8
 elseif platform.is_win then
   weight = 400
   line_height = 1.1
