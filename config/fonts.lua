@@ -11,7 +11,7 @@ local weight = 300
 if platform.is_linux then
   line_height = 1.1
   font = wezterm.font_with_fallback({
-    { family = 'RecMonoDuotone Nerd Font' },
+    { family = 'RecMonoGenmzyUnsimple Nerd Font' },
   })
   font_size = local_cfg.screen_k == 2 and 14.8 or 14.5
 elseif platform.is_win then
