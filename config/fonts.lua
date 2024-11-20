@@ -11,9 +11,9 @@ local weight = 300
 if platform.is_linux then
   line_height = 1.1
   font = wezterm.font_with_fallback({
-    { family = 'PTCode Nerd Font' },
+    { family = 'RecMonoDuotone Nerd Font' },
   })
-  font_size = local_cfg.screen_k == 2 and 14.8 or 15.8
+  font_size = local_cfg.screen_k == 2 and 14.8 or 14.5
 elseif platform.is_win then
   weight = 400
   line_height = 1.1
@@ -33,24 +33,4 @@ return {
   --ref: https://wezfurlong.org/wezterm/config/lua/config/freetype_pcf_long_family_names.html#why-doesnt-wezterm-use-the-distro-freetype-or-match-its-configuration
   freetype_load_target = 'Normal', ---@type 'Normal'|'Light'|'Mono'|'HorizontalLcd'
   freetype_render_target = 'Normal', ---@type 'Normal'|'Light'|'Mono'|'HorizontalLcd'
-
-  -- make bold use DemiBold
-  font_rules = {
-    {
-      intensity = 'Bold',
-      italic = false,
-      font = wezterm.font(
-        'PTCode Nerd Font',
-        { weight = weight + 300, stretch = 'Normal', style = 'Normal' }
-      ),
-    },
-    {
-      intensity = 'Bold',
-      italic = true,
-      font = wezterm.font(
-        'PTCode Nerd Font',
-        { weight = weight + 300, stretch = 'Normal', style = 'Italic' }
-      ),
-    },
-  },
 }
