@@ -9,7 +9,7 @@ local weight = 300
 
 if platform.is_linux then
   weight = 400
-  line_height = 1.1
+  line_height = 1.0
   font = wezterm.font_with_fallback({
     { family = 'LigaSrcPro Nerd Font', weight = weight },
     { family = 'Noto Sans Mono CJK SC' },
