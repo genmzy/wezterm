@@ -9,11 +9,11 @@ local line_height = 1.0
 local weight = 300
 
 if platform.is_linux then
-  line_height = 1.1
+  line_height = 1.0
   font = wezterm.font_with_fallback({
     { family = 'PTCode Nerd Font' },
   })
-  font_size = local_cfg.screen_k == 2 and 14.8 or 15.8
+  font_size = local_cfg.screen_k == 2 and 14.8 or 14.8
 elseif platform.is_win then
   weight = 400
   line_height = 1.1
