@@ -17,11 +17,11 @@ M.cells = {}
 
 M.colors = {
   default = {
-    bg = '#45475a',
+    bg = '#707A8C',
     fg = '#1c1b19',
   },
   is_active = {
-    bg = '#7FB4CA',
+    bg = '#5CCFE6',
     fg = '#11111b',
   },
 
@@ -114,7 +114,7 @@ M.setup = function()
 
     -- Unseen output alert
     if has_unseen_output then
-      M.push(bg, '#FFA066', { Intensity = 'Bold' }, ' ' .. GLYPH_CIRCLE)
+      M.push(bg, '#95E6CB', { Intensity = 'Bold' }, ' ' .. GLYPH_CIRCLE)
     end
 
     -- Right padding
