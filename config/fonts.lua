@@ -1,5 +1,6 @@
 local wezterm = require('wezterm')
 local platform = require('utils.platform')()
+local sk = require('local.local').screen_k
 
 local font_size
 local font
@@ -10,7 +11,7 @@ if platform.is_linux then
     -- { family = 'ComicCodeLigatures Nerd Font' },
     { family = 'RecMonoFitAll Nerd Font' },
   })
-  font_size = 14.5
+  font_size = (sk == 1 and 14.5 or 15.7)
 elseif platform.is_win then
   line_height = 1.2
   -- font = wezterm.font('RecMonoGenmzyUnsimple NF')
