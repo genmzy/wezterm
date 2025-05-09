@@ -8,8 +8,7 @@ local line_height = 1.0
 if platform.is_linux then
   line_height = 1.0
   font = wezterm.font_with_fallback({
-    -- { family = 'ComicCodeLigatures Nerd Font' },
-    { family = 'RecMonoFitAll Nerd Font' },
+    { family = 'RecMonoCRSV Nerd Font' },
   })
   font_size = (sk == 1 and 14.5 or 15.7)
 elseif platform.is_win then
