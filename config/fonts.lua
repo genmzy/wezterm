@@ -10,7 +10,7 @@ if platform.is_linux then
   font = wezterm.font_with_fallback({
     { family = 'RecMonoCRSV Nerd Font' },
   })
-  font_size = (sk == 1 and 14.5 or 15.7)
+  font_size = (sk == 1 and 15.1 or 15.7)
 elseif platform.is_win then
   line_height = 1.2
   -- font = wezterm.font('RecMonoGenmzyUnsimple NF')
