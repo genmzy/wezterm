@@ -89,7 +89,7 @@ local colorscheme = {
     [16] = mocha.peach,
     [17] = mocha.rosewater,
   },
-  scrollbar_thumb = mocha.gray,
+  scrollbar_thumb = mocha.overlay1,
   split = mocha.overlay0,
   compose_cursor = mocha.flamingo, -- nightbuild only
   copy_mode_inactive_highlight_fg = { Color = mocha.text },
