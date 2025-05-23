@@ -11,6 +11,7 @@ if platform.is_linux then
   line_height = 1.1
   font = wezterm.font_with_fallback({
     { family = 'PTCode Nerd Font' },
+    { family = 'LXGW WenKai Mono' },
   })
   font_size = 15.8
 elseif platform.is_win then
