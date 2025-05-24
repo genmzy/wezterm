@@ -1,26 +1,25 @@
 local wezterm = require('wezterm')
 local platform = require('utils.platform')()
-local local_cfg = require('local.local')
+local sk = require('local.local').screen_k
 
 local font_size
 local font
 local line_height = 1.0
-
-local weight = 300
-
 if platform.is_linux then
   line_height = 1.0
   font = wezterm.font_with_fallback({
-    { family = 'PTCode Nerd Font' },
+    { family = 'RecMonoCRSV Nerd Font' },
+    { family = 'LXGW WenKai Mono' },
   })
-  font_size = local_cfg.screen_k == 2 and 14.8 or 14.8
+  font_size = (sk == 1 and 14.5 or 15.7)
 elseif platform.is_win then
-  weight = 400
-  line_height = 1.1
-  font = wezterm.font({ family = 'LigaSrcPro Nerd Font', weight = weight })
-  font_size = 13
+  line_height = 1.2
+  -- font = wezterm.font('RecMonoGenmzyUnsimple NF')
+  font = wezterm.font('Maple Mono NF CN')
+  -- font = wezterm.font('ComicCodeLigaturesNerdFontComplete Nerd Font')
+  font_size = 13.5
 else
-  font = wezterm.font({ family = 'LigaSrcPro Nerd Font', weight = weight })
+  font = wezterm.font('ComicCodeLigatures Nerd Font')
   font_size = 12
 end
 
@@ -33,24 +32,4 @@ return {
   --ref: https://wezfurlong.org/wezterm/config/lua/config/freetype_pcf_long_family_names.html#why-doesnt-wezterm-use-the-distro-freetype-or-match-its-configuration
   freetype_load_target = 'Normal', ---@type 'Normal'|'Light'|'Mono'|'HorizontalLcd'
   freetype_render_target = 'Normal', ---@type 'Normal'|'Light'|'Mono'|'HorizontalLcd'
-
-  -- make bold use DemiBold
-  font_rules = {
-    {
-      intensity = 'Bold',
-      italic = false,
-      font = wezterm.font(
-        'PTCode Nerd Font',
-        { weight = weight + 300, stretch = 'Normal', style = 'Normal' }
-      ),
-    },
-    {
-      intensity = 'Bold',
-      italic = true,
-      font = wezterm.font(
-        'PTCode Nerd Font',
-        { weight = weight + 300, stretch = 'Normal', style = 'Italic' }
-      ),
-    },
-  },
 }
