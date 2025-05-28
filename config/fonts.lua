@@ -11,7 +11,7 @@ if platform.is_linux then
     -- { family = 'ComicCodeLigatures Nerd Font' },
     { family = 'Maple Mono NF CN', weight = 300 },
   })
-  font_size = (sk == 1 and 14.5 or 15.7)
+  font_size = (sk == 1 and 15.1 or 15.7)
 elseif platform.is_win then
   line_height = 1.2
   -- font = wezterm.font('RecMonoGenmzyUnsimple NF')
