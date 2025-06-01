@@ -1,17 +1,16 @@
 local wezterm = require('wezterm')
 local platform = require('utils.platform')()
-local sk = require('local.local').screen_k
 
 local font_size
 local font
 local line_height = 1.0
 if platform.is_linux then
-  line_height = 1.0
+  line_height = 0.93
   font = wezterm.font_with_fallback({
-    { family = 'RecMonoCRSV Nerd Font' },
+    { family = 'ComicCodeLigaturesNerdFontComplete Nerd Font' },
     { family = 'LXGW WenKai Mono' },
   })
-  font_size = (sk == 1 and 14.5 or 15.7)
+  font_size = 15.2
 elseif platform.is_win then
   line_height = 1.2
   -- font = wezterm.font('RecMonoGenmzyUnsimple NF')
