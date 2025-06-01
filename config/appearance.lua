@@ -15,7 +15,7 @@ return {
   background = {
     {
       source = { Color = colors.background },
-      opacity = 0.96,
+      opacity = 0.88,
       width = '100%',
       height = '100%',
     },
@@ -43,7 +43,7 @@ return {
     top = 0,
     bottom = 0,
   },
-  window_decorations = 'RESIZE',
+  window_decorations = 'NONE',
   window_close_confirmation = 'NeverPrompt',
   inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
 }
