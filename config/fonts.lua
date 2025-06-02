@@ -1,6 +1,6 @@
 local wezterm = require('wezterm')
 local platform = require('utils.platform')()
-local sk = require('local.local').screen_k
+local ok, lcfg = pcall(require, 'local.local')
 
 local font_size
 local font
@@ -11,7 +11,7 @@ if platform.is_linux then
     { family = 'PTCode Nerd Font' },
     { family = 'LXGW WenKai Mono' },
   })
-  font_size = 15.8
+  font_size = (ok and lcfg.screen_k == 2) and 15.8 or 14.8
 elseif platform.is_win then
   line_height = 1.2
   -- font = wezterm.font('RecMonoGenmzyUnsimple NF')
