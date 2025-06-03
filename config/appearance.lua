@@ -15,7 +15,7 @@ return {
   background = {
     {
       source = { Color = colors.background },
-      opacity = 0.96,
+      opacity = 0.92,
       width = '100%',
       height = '100%',
     },
