@@ -17,11 +17,11 @@ end
 
 local keys = {
   -- misc/useful --
-  { key = 'F3', mods = 'NONE', action = act.ActivateCommandPalette },
-  { key = 'F9', mods = 'NONE', action = act.ShowLauncher },
-  { key = 'F10', mods = 'NONE', action = act.ShowTabNavigator },
-  { key = 'F11', mods = 'NONE', action = act.ToggleFullScreen },
-  { key = 'F12', mods = 'NONE', action = act.ShowDebugOverlay },
+  { key = 'F3', mods = mod.SUPER, action = act.ActivateCommandPalette },
+  { key = 'F9', mods = mod.SUPER, action = act.ShowLauncher },
+  { key = 'F10', mods = mod.SUPER, action = act.ShowTabNavigator },
+  { key = 'F11', mods = mod.SUPER, action = act.ToggleFullScreen },
+  { key = 'F12', mods = mod.SUPER, action = act.ShowDebugOverlay },
   { key = 'f', mods = mod.SUPER, action = act.Search({ CaseInSensitiveString = '' }) },
   { key = 'v', mods = mod.SUPER, action = 'ActivateCopyMode' },
 
