@@ -9,7 +9,7 @@ if platform.is_linux then
   font = wezterm.font_with_fallback({
     { family = 'Maple Mono NF CN', weight = 300 },
   })
-  font_size = 14.5
+  font_size = 14.0
 elseif platform.is_win then
   line_height = 1.2
   -- font = wezterm.font('RecMonoGenmzyUnsimple NF')
