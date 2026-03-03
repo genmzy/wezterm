@@ -5,11 +5,11 @@ local font_size
 local font
 local line_height = 1.0
 if platform.is_linux then
-  line_height = 1.08
+  line_height = 1.14
   font = wezterm.font_with_fallback({
-    { family = 'Maple Mono NF CN', weight = 300 },
+    { family = 'Rec Mono CRSV Nerd Font', weight = 300 },
   })
-  font_size = 14.0
+  font_size = 15.0
 elseif platform.is_win then
   line_height = 1.2
   -- font = wezterm.font('RecMonoGenmzyUnsimple NF')
