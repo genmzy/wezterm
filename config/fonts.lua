@@ -10,7 +10,7 @@ if platform.is_linux then
     { family = 'ComicCodeLigaturesNerdFontComplete Nerd Font' },
     { family = 'LXGW WenKai Mono' },
   })
-  font_size = 15.2
+  font_size = 14.0
 elseif platform.is_win then
   line_height = 1.2
   -- font = wezterm.font('RecMonoGenmzyUnsimple NF')
