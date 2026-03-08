@@ -3,7 +3,7 @@ local platform = require('utils.platform')()
 
 return {
   -- ui: windows web gpu support is not good now
-  front_end = platform.is_win and 'OpenGL' or 'WebGpu',
+  front_end = 'OpenGL',
 
   -- ligature fix
   freetype_load_flags = 'NO_HINTING',
