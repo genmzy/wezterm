@@ -3,7 +3,7 @@ local colors = require('colors.custom')
 
 return {
   -- ui
-  front_end = 'OpenGL',
+  front_end = 'WebGpu',
 
   -- ligature fix
   freetype_load_flags = 'NO_HINTING',
