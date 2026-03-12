@@ -5,10 +5,9 @@ local font_size
 local font
 local line_height = 1.0
 if platform.is_linux then
-  line_height = 1.1
+  line_height = 1.0
   font = wezterm.font_with_fallback({
-    { family = 'Ligamononoki NF' },
-    { family = 'ComicCodeLigaturesNerdFontComplete Nerd Font' },
+    { family = 'LigaSrcPro Nerd Font' },
     { family = 'LXGW WenKai Mono' },
   })
   font_size = 15
