@@ -18,16 +18,16 @@ M.cells = {}
 M.colors = {
   default = {
     bg = '#92978c',
-    fg = '#fff9e8',
+    fg = '#fdf6e3',
   },
   is_active = {
     bg = '#35a77c',
-    fg = '#fff9e8',
+    fg = '#fdf6e3',
   },
 
   hover = {
     bg = '#587d8c',
-    fg = '#fff9e8',
+    fg = '#fdf6e3',
   },
 }
 
